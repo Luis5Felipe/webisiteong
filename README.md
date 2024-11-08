@@ -34,37 +34,37 @@ A Mãos Unidas é uma organização que realiza tratamentos e oferece suporte pa
 
 #### Crie um ambiente virtual:
 
-     "python -m venv venv"
+    python -m venv venv
 
 ### Ative o ambiente virtual:
 
 #### Windows 
 
-    "venv\Scripts\activate"
+    venv\Scripts\activate
 
 #### Linux 
  
-    "source venv/bin/activate"
+    source venv/bin/activate
 
 #### Clone este repositório:
 
-    "git@github.com:Luis5Felipe/webisiteong.git"
+    git@github.com:Luis5Felipe/webisiteong.git
 
 #### Instale as dependências:
 
-     "pip install -r requirements.txt"
+    pip install -r requirements.txt
 
 #### Rode as migrações do banco de dados:
 
-    "python manage.py migrate"
+    python manage.py migrate
 
-#### python manage.py migrate
+#### Inicie o servidor:
 
-    "python manage.py runserver"
+    python manage.py runserver
 
 
 ## Contato :mailbox_with_mail:
 
-    Desenvolvido [por Luis Felip](https://www.linkedin.com/in/luis-felipe-dos-santos/) como parte do projeto de extensão da Unilasalle.
+    Desenvolvido pro [Luis Felipe](https://www.linkedin.com/in/luis-felipe-dos-santos/) como parte do projeto de extensão da Unilasalle.
 
 # Licença :page_facing_up:
