@@ -21,7 +21,13 @@ class Paciente(models.Model):
         ('O', 'Outro')
     ]
     genero = models.CharField(max_length=1, choices=genero_list, default='O')
-
+    STATUS_CHOICES = [
+        ('pendente', 'Pendente'),
+         ('rejeitado', 'Rejeitado'),
+        ('concluído', 'Concluído'),
+    ]
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pendente')
+    
     def __str__(self):
         return self.nome_Paciente
     
@@ -60,6 +66,12 @@ class Voluntario(models.Model):
         ('O', 'Outro')
     ]
     genero = models.CharField(max_length=1, choices=genero_list, default='O')
+    STATUS_CHOICES = [
+        ('pendente', 'Pendente'),
+        ('aprovado', 'Aprovado'),
+        ('rejeitado', 'Rejeitado'),
+    ]
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pendente')
 
     def __str__(self):
         return self.nome_Voluntario
@@ -97,5 +109,11 @@ class Consulta(models.Model):
         ('Estimulação Pedagógica', 'Estimulação Pedagógica'),
     ]
     especialidade = models.CharField(max_length=50, choices=especialidade_list, default='Psicologia Comportamental')
+    STATUS_CHOICES = [
+        ('pendente', 'Pendente'),
+        ('rejeitado', 'Rejeitado'),
+        ('concluído', 'Concluído'),
+    ]
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pendente')
     def __str__(self):
         return f"Consulta de {self.id_Paciente_FK} com {self.id_Voluntario_FK} em {self.data_Registro}"
