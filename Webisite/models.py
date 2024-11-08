@@ -85,5 +85,17 @@ class Voluntario(models.Model):
         self.clean()
         super(Voluntario, self).save(*args, **kwargs)
 
-
-    
+class Consulta(models.Model):
+    data_Registro = models.DateTimeField(auto_now_add=True)
+    id_Paciente_FK = models.ForeignKey(Paciente, on_delete=models.PROTECT)
+    id_Voluntario_FK = models.ForeignKey(Voluntario, on_delete=models.PROTECT)
+    especialidade_list = [
+        ('Psicologia Comportamental', 'Psicologia Comportamental'),
+        ('Psicomotricidade', 'Psicomotricidade'),
+        ('Fonoaudiologia', 'Fonoaudiologia'),
+        ('Aplicadora em ABA', 'Aplicadora em ABA'),
+        ('Estimulação Pedagógica', 'Estimulação Pedagógica'),
+    ]
+    especialidade = models.CharField(max_length=50, choices=especialidade_list, default='Psicologia Comportamental')
+    def __str__(self):
+        return f"Consulta de {self.id_Paciente_FK} com {self.id_Voluntario_FK} em {self.data_Registro}"
