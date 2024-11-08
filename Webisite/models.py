@@ -5,7 +5,7 @@ from datetime import date
 
 #tabela paciente
 class Paciente(models.Model):
-    id_Paciente = models.CharField(max_length=20, primary_key=True)
+    id_Paciente = models.AutoField(primary_key=True)
     nome_Paciente = models.CharField(max_length=255)
     nome_Responsavel = models.CharField(max_length=255)
     email = models.EmailField(max_length=255)
@@ -13,7 +13,7 @@ class Paciente(models.Model):
     cpf_responsavel = models.CharField(max_length=255)
     data_Nascimento = models.DateField()
     idade_Paciente = models.IntegerField()
-    endereço = models.CharField(max_length=255)
+    endereco = models.CharField(max_length=255)
     data_Registro = models.DateTimeField(auto_now_add=True)
     genero_list = [
         ('M', 'Masculino'),
@@ -21,7 +21,13 @@ class Paciente(models.Model):
         ('O', 'Outro')
     ]
     genero = models.CharField(max_length=1, choices=genero_list, default='O')
-
+    STATUS_CHOICES = [
+        ('pendente', 'Pendente'),
+         ('rejeitado', 'Rejeitado'),
+        ('concluído', 'Concluído'),
+    ]
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pendente')
+    
     def __str__(self):
         return self.nome_Paciente
     
@@ -45,13 +51,13 @@ class Paciente(models.Model):
 
 #Tabela Voluntario
 class Voluntario(models.Model):
-    id_Voluntario = models.CharField(max_length=20, primary_key=True)
+    id_Voluntario = models.AutoField(primary_key=True)
     nome_Voluntario = models.CharField(max_length=255)
     cpf_Voluntario = models.CharField(max_length=255)
     data_Nascimento = models.DateField()
     telefone = models.CharField(max_length=255)
     email = models.EmailField(max_length=255)
-    endereço = models.CharField(max_length=255)
+    endereco = models.CharField(max_length=255)
     data_Registro = models.DateTimeField(auto_now_add=True)
     idade_Voluntario = models.IntegerField()
     genero_list = [
@@ -60,6 +66,12 @@ class Voluntario(models.Model):
         ('O', 'Outro')
     ]
     genero = models.CharField(max_length=1, choices=genero_list, default='O')
+    STATUS_CHOICES = [
+        ('pendente', 'Pendente'),
+        ('aprovado', 'Aprovado'),
+        ('rejeitado', 'Rejeitado'),
+    ]
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pendente')
 
     def __str__(self):
         return self.nome_Voluntario
@@ -97,5 +109,11 @@ class Consulta(models.Model):
         ('Estimulação Pedagógica', 'Estimulação Pedagógica'),
     ]
     especialidade = models.CharField(max_length=50, choices=especialidade_list, default='Psicologia Comportamental')
+    STATUS_CHOICES = [
+        ('pendente', 'Pendente'),
+        ('rejeitado', 'Rejeitado'),
+        ('concluído', 'Concluído'),
+    ]
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pendente')
     def __str__(self):
         return f"Consulta de {self.id_Paciente_FK} com {self.id_Voluntario_FK} em {self.data_Registro}"
