@@ -194,3 +194,37 @@ html, body {
     margin: 20px auto;     
 }
 
+.apelo {
+    background-color: #C57507;
+    width: 1262px;          /* Largura fixa do contêiner */
+    height: 432px;          /* Altura fixa do contêiner */
+    display: flex;
+    margin: 0 auto;         /* Centraliza o contêiner horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    justify-content: center;
+    align-content: center;
+    margin-top: 80px;
+}
+
+.apelo  p {
+    margin: 0; /* Remove a margem do <p> */
+    font-family: var(--fonteTexto);
+    font-size: 18px;
+    color: white; 
+    padding-left: 80px;   
+}
+
+
+.imagem {
+    width: 1000%; /* Ou qualquer largura desejada */
+    max-width: 316px; /* Limite a largura máxima da imagem */
+    height: auto;
+    display: flex;
+}
+
+.imagem img {
+    width: 100%; /* A imagem ocupa 100% do contêiner */
+    height: 432px; /* A altura é ajustada automaticamente */
+    object-fit: contain; /* Para manter a proporção sem cortar a imagem */
+    padding-left: 72px;
+}
