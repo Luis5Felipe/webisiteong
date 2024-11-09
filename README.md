@@ -65,6 +65,6 @@ A Mãos Unidas é uma organização que realiza tratamentos e oferece suporte pa
 
 ## Contato :mailbox_with_mail:
 
-    Desenvolvido pro [Luis Felipe](https://www.linkedin.com/in/luis-felipe-dos-santos/) como parte do projeto de extensão da Unilasalle.
+    Desenvolvido [por Luis Felip](https://www.linkedin.com/in/luis-felipe-dos-santos/) como parte do projeto de extensão da Unilasalle.
 
 # Licença :page_facing_up:
