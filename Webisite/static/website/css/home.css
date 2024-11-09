@@ -15,8 +15,8 @@ html, body {
 }
 
 :root{
-    --fonteMenu: 'Fira sans',sans-serif;
-    --fonteTexto: 'Fira sans Condensad',sans-serif;
+    --fonteMenu: 'Fira sans', sans-serif;
+    --fonteTexto: 'Fira sans Condensed', sans-serif;
 } 
 
 /* Menu */
@@ -115,7 +115,6 @@ html, body {
     font-size: 40px;
     font-weight: bold;
     margin: 0;
-    text-align: center;
 }
 
 .banner-text p {
@@ -165,5 +164,33 @@ html, body {
     height: 100%;
     object-fit: cover;
     z-index: 0; 
+}
+
+.sobre-ong{
+    background: #748A1E;
+    margin-top: 10px;
+}
+.sobre-ong h2{
+    color: white;
+    font-family: var(--fonteMenu);
+    font-size: 32px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.sobre-ong p{
+    color: white;
+    font-family: var(--fonteTexto);
+    font-size: 18px;
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+}
+
+#linha {
+    width: 25%;            
+    height: 5px;           
+    background-color:#FF9800;
+    border: none;        
+    margin: 20px auto;     
 }
 
