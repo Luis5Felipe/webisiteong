@@ -166,6 +166,7 @@ html, body {
     z-index: 0; 
 }
 
+/*Sobre a ong */
 .sobre-ong{
     background: #748A1E;
     margin-top: 10px;
@@ -193,21 +194,21 @@ html, body {
     border: none;        
     margin: 20px auto;     
 }
-
+/*apelo de doação*/
 .apelo {
     background-color: #C57507;
-    width: 1262px;          /* Largura fixa do contêiner */
-    height: 432px;          /* Altura fixa do contêiner */
+    width: 1262px;        
+    height: 432px;         
     display: flex;
-    margin: 0 auto;         /* Centraliza o contêiner horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
+    margin: 0 auto;        
+    align-items: center;    
     justify-content: center;
     align-content: center;
     margin-top: 80px;
 }
 
 .apelo  p {
-    margin: 0; /* Remove a margem do <p> */
+    margin: 0;
     font-family: var(--fonteTexto);
     font-size: 18px;
     color: white; 
@@ -216,15 +217,83 @@ html, body {
 
 
 .imagem {
-    width: 1000%; /* Ou qualquer largura desejada */
-    max-width: 316px; /* Limite a largura máxima da imagem */
+    width: 1000%; 
+    max-width: 316px;
     height: auto;
     display: flex;
 }
 
 .imagem img {
-    width: 100%; /* A imagem ocupa 100% do contêiner */
-    height: 432px; /* A altura é ajustada automaticamente */
-    object-fit: contain; /* Para manter a proporção sem cortar a imagem */
+    width: 100%; 
+    height: 432px; 
+    object-fit: contain; 
     padding-left: 72px;
+}
+
+/*banner de expecialidade*/
+
+#margin {
+    margin-top: 80px; 
+}
+
+.banner2 {
+    position: relative;
+    width: 100%;        
+    height: 1018px;     
+    padding: 0;
+}
+
+.cover {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 649px;           
+    height: 100%;         
+    background: rgba(0, 0, 0, 0.5);  
+    z-index: 1;           
+}
+
+.banner2 img {
+    width: 100%;          
+    height: 100%;          
+    object-fit: cover;     
+    z-index: 0;            
+}
+
+.textos h1{
+    color: white;
+    font-size: 78px;
+    font-family: var(--fonteMenu);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.lista-servicos li {
+    color: white;
+    font-size: 48px;
+    font-family: var(--fonteTexto);
+    margin: 0;
+    line-height: 2;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separador{
+    width: 99%;            
+    height: 5px;           
+    background-color:#FF9800;
+    border: none;        
+    margin: 20px auto;     
+}
+.separador1{
+    width: 100%;            
+    height: 5px;           
+    background-color:#ffffff;
+    border: none;        
+    margin: 20px auto;     
 }
