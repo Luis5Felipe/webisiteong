@@ -88,14 +88,29 @@
         </div>
     </section>
     <section class="caixab1">
-        {% for evento in eventos %}
         <div class="card1">
-            <img src="{{ evento.fotos.url }}" alt="Foto do evento" width="300">
-            <!-- <p>{{ evento }}</p> -->
-            <strong>{{ evento.data_evento }}</strong>
+            <img src="{{ evento1.fotos.url }}" alt="Foto do evento 1" width="300">
+            <h3>{{ evento1.nome }}</h3>  <!-- Nome do evento -->
+            <p>{{ evento1.descricao }}</p>  <!-- Descrição do evento -->
+            <strong>{{ evento1.data_evento }}</strong>  <!-- Data do evento -->
         </div>
-        {% endfor %}
+    
+        <div class="card1">
+            <img src="{{ evento2.fotos.url }}" alt="Foto do evento 2" width="300">
+            <h3>{{ evento2.nome }}</h3>  <!-- Nome do evento -->
+            <p>{{ evento2.descricao }}</p>  <!-- Descrição do evento -->
+            <strong>{{ evento2.data_evento }}</strong>  <!-- Data do evento -->
+        </div>
+    
+        <div class="card1">
+            <img src="{{ evento3.fotos.url }}" alt="Foto do evento 3" width="300">
+            <h3>{{ evento3.nome }}</h3>  <!-- Nome do evento -->
+            <p>{{ evento3.descricao }}</p>  <!-- Descrição do evento -->
+            <strong>{{ evento3.data_evento }}</strong>  <!-- Data do evento -->
+        </div>
     </section>
+    
+
 </body>
 
 </html>

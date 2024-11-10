@@ -328,9 +328,9 @@ html, body {
 /* Contêiner principal que centraliza os cards */
 .caixab1 {
     display: flex;
-    flex-direction: column;  /* Alinha os cards em uma única coluna */
     justify-content: center; /* Centraliza os cards verticalmente */
     align-items: center;     /* Alinha os cards horizontalmente */
+    justify-content: space-evenly;
     text-align: center;
     padding: 20px;
 }
@@ -338,7 +338,7 @@ html, body {
 /* Estilo do card */
 .card1 {
     background: #080114;
-    width: 300px;  /* Define a largura do card */
+    width: 320px;  /* Define a largura do card */
     display: flex;
     flex-direction: column;  /* Alinha a imagem e a data em coluna dentro do card */
     justify-content: center;
