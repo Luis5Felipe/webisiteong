@@ -122,3 +122,6 @@ class Consulta(models.Model):
 class MidiaEventos(models.Model):
     data_evento = models.DateField()
     fotos = models.ImageField(upload_to='eventos/',blank=True, null=True)
+    
+    def __str__(self):
+        return f"Evento em {self.data_evento}"

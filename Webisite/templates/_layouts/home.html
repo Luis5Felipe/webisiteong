@@ -87,5 +87,15 @@
             <h1>Eventos</h1>
         </div>
     </section>
+    <section class="caixab1">
+        {% for evento in eventos %}
+        <div class="card1">
+            <img src="{{ evento.fotos.url }}" alt="Foto do evento" width="300">
+            <!-- <p>{{ evento }}</p> -->
+            <strong>{{ evento.data_evento }}</strong>
+        </div>
+        {% endfor %}
+    </section>
 </body>
+
 </html>
