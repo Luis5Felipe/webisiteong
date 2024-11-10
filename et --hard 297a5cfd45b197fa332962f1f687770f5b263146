@@ -1,0 +1,127 @@
+[33mcommit 297a5cfd45b197fa332962f1f687770f5b263146[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Sat Nov 9 23:27:04 2024 -0300
+
+    Update pagina home
+
+[33mcommit 95bf43c972d8ff1f2e6827c9326afb3b813b5b6a[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Sat Nov 9 20:44:32 2024 -0300
+
+    Update pagina home
+
+[33mcommit 76508685227735593d72d9666d33287dec51705b[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Sat Nov 9 19:53:21 2024 -0300
+
+    Update pagina home
+
+[33mcommit 63b6ec1eef49c7df9fd03f101161c0837661e08d[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Sat Nov 9 19:03:37 2024 -0300
+
+    Update pagina home
+
+[33mcommit 603a25955fc9774b5324cea1cb021cf42033e874[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Sat Nov 9 16:18:29 2024 -0300
+
+    atualizado a pagina home
+
+[33mcommit eb0a70f611f106234f4e820c9098799ab29e8150[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Sat Nov 9 13:56:24 2024 -0300
+
+    Desenvolvimento da Pagina home
+
+[33mcommit 16cf7362b361386f9d850d1dd8480e203ee1ec49[m
+Merge: baa42cf f3d14cd
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Sat Nov 9 00:38:51 2024 -0300
+
+    Update README.md
+
+[33mcommit baa42cffb96d602a8ee3da2a8052266f0174d087[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Fri Nov 8 14:07:32 2024 -0300
+
+    Readme Atualizado
+
+[33mcommit f3d14cd2b7e02ea7201fb8cfa8cc5a3cefa062aa[m
+Author: Luis Felipe Dos Santos <130870829+Luis5Felipe@users.noreply.github.com>
+Date:   Fri Nov 8 14:01:23 2024 -0300
+
+    Update README.md
+
+[33mcommit c11f4cedab7b7c8054c920a9b958f5b232b99be5[m
+Author: Luis Felipe Dos Santos <130870829+Luis5Felipe@users.noreply.github.com>
+Date:   Fri Nov 8 14:00:43 2024 -0300
+
+    Update README.md
+
+[33mcommit d23387d5df6ff0abe2e5f81c2b2f7533ba03df7b[m
+Author: Luis Felipe Dos Santos <130870829+Luis5Felipe@users.noreply.github.com>
+Date:   Fri Nov 8 14:00:18 2024 -0300
+
+    Update README.md
+
+[33mcommit f51e6f5099881ec77c36029bd201781559c438e7[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Fri Nov 8 13:56:41 2024 -0300
+
+    Readme Atualizado
+
+[33mcommit 8b8733e69ffcbb200126051a8097208943f9ce71[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Fri Nov 8 13:33:09 2024 -0300
+
+    Adiciona README.md
+
+[33mcommit 12899f0b4f956b23bcb147816539366e15d044ed[m
+Merge: 23cf840 9669451
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Fri Nov 8 13:02:21 2024 -0300
+
+    Backend Finalizado
+
+[33mcommit 23cf840ba142eaea218b45eac365f74a7507e8fe[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Fri Nov 8 13:01:07 2024 -0300
+
+    Salvando mudanças antes do merge
+
+[33mcommit 9669451757536ea879aec4eb163c2154941187a8[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Fri Nov 8 12:51:49 2024 -0300
+
+    Parte backend Finalizada
+
+[33mcommit 523e0591ffe1a47becaef2a67c6fccf07b88afaf[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Fri Nov 8 02:26:51 2024 -0300
+
+    ADM e moldels parcialmente finalizadas
+
+[33mcommit 54eedd8ab919b2d9f159542127468e21f1a0961f[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Fri Nov 8 00:13:21 2024 -0300
+
+    Tabela de consulta adicionado
+
+[33mcommit 6cff021a87cd6a26ddc34ee386a4900a0846687a[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Fri Nov 8 00:00:34 2024 -0300
+
+    Resolvido o problema do migrations
+
+[33mcommit e3c342da39f2b371a82939948b7e8864e9d26ed6[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Thu Nov 7 23:21:22 2024 -0300
+
+    Resolvendo conflitos e ignorando arquivos binários
+
+[33mcommit 8f011913c94db54dd21122f84854187905171e55[m[33m ([m[1;31morigin/bd.configurações[m[33m, [m[1;32mbd.configurações[m[33m, [m[1;32mbd.configuração[m[33m)[m
+Author: Luis5Felipe <luisfelipedos29@gmail.com>
+Date:   Mon Nov 4 15:05:02 2024 -0300
+
+    configuração do banco de dados

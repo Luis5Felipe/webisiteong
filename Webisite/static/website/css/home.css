@@ -297,3 +297,29 @@ html, body {
     border: none;        
     margin: 20px auto;     
 }
+
+
+/*Eventos*/
+
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px 80px 0px;
+}
+
+.eventos {
+    background: #101d41;
+    width: 796px;
+    height: 59px;
+    border-radius: 20px;
+}
+
+.eventos h1 {
+    color: white;
+    font-family: var(--fonteMenu);
+    font-size: 32px;
+    text-align: center;
+    padding-top: 10px;
+}
+
