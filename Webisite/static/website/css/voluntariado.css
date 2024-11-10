@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+}
+
+:root{
+    --fonteMenu: 'Fira sans', sans-serif;
+    --fonteTexto: 'Fira sans Condensed', sans-serif;
+} 
+
+/* Menu */
+.conteiner-a1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #ffffff;
+    padding: 10px 30px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 106px;
+    height: 106px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-right: 30px;
+}
+
+.menu ul li a {
+    color: #090015;
+    font-size: 18px;
+    font-family: var(--fonteMenu);
+}
+
+
+
+/* Botão APOIE */
+#btn-apoiar {
+    background-color: #FF9800;
+    color: white;
+    padding: 15px 25px;
+    margin: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/*Roda Pé*/
+.rodape {
+    background: #272727;
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    font-family: var(--fonteTexto);
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#logo2{
+    width: 175px;
+    height: 153px;
+}
+
+.data h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.redesocial h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.icones {
+    margin-bottom: 20px;
+}
+
+.contato h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contato span {
+    font-size: 20px;
+}
+.endereco h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.textorodape {
+    background: #151515;
+    color: white;
+    width: 100%;
+    padding: 10px 0;  
+    text-align: center;
+}
+
+.textorodape  {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;  
+}

@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import MidiaEventos
+#from .models import Voluntarios
 
 def home_view(request):
     # Recuperar os 3 primeiros eventos, ordenados pela data (caso a data seja relevante para determinar a "mais antiga")
@@ -26,4 +27,6 @@ def home_view(request):
         'evento3': eventos[2] if len(eventos) > 2 else None,
     })
 
-    
+def voluntario_view(request):
+    # Aqui você pode passar qualquer contexto se necessário, mas no exemplo é vazio
+    return render(request, '_layouts/volunario.html')
