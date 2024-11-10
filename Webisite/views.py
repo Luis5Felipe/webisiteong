@@ -25,3 +25,5 @@ def home_view(request):
         'evento2': eventos[1] if len(eventos) > 1 else None,
         'evento3': eventos[2] if len(eventos) > 2 else None,
     })
+
+    

@@ -90,26 +90,57 @@
     <section class="caixab1">
         <div class="card1">
             <img src="{{ evento1.fotos.url }}" alt="Foto do evento 1" width="300">
-            <h3>{{ evento1.nome }}</h3>  <!-- Nome do evento -->
-            <p>{{ evento1.descricao }}</p>  <!-- Descrição do evento -->
-            <strong>{{ evento1.data_evento }}</strong>  <!-- Data do evento -->
+            <h3>{{ evento1.nome }}</h3> <!-- Nome do evento -->
+            <p>{{ evento1.descricao }}</p> <!-- Descrição do evento -->
+            <strong>{{ evento1.data_evento }}</strong> <!-- Data do evento -->
         </div>
-    
+
         <div class="card1">
             <img src="{{ evento2.fotos.url }}" alt="Foto do evento 2" width="300">
-            <h3>{{ evento2.nome }}</h3>  <!-- Nome do evento -->
-            <p>{{ evento2.descricao }}</p>  <!-- Descrição do evento -->
-            <strong>{{ evento2.data_evento }}</strong>  <!-- Data do evento -->
+            <h3>{{ evento2.nome }}</h3> <!-- Nome do evento -->
+            <p>{{ evento2.descricao }}</p> <!-- Descrição do evento -->
+            <strong>{{ evento2.data_evento }}</strong> <!-- Data do evento -->
         </div>
-    
+
         <div class="card1">
             <img src="{{ evento3.fotos.url }}" alt="Foto do evento 3" width="300">
-            <h3>{{ evento3.nome }}</h3>  <!-- Nome do evento -->
-            <p>{{ evento3.descricao }}</p>  <!-- Descrição do evento -->
-            <strong>{{ evento3.data_evento }}</strong>  <!-- Data do evento -->
+            <h3>{{ evento3.nome }}</h3> <!-- Nome do evento -->
+            <p>{{ evento3.descricao }}</p> <!-- Descrição do evento -->
+            <strong>{{ evento3.data_evento }}</strong> <!-- Data do evento -->
         </div>
     </section>
-    
+
+    <footer class="rodape">
+        <img id="logo2" src="{% static 'website/img/logo.png' %}" alt="Logo da Mãos Unidas">
+         <div id="data">
+            <h3>🕐 De Seg a Sex das 8h ás 16</h3>
+        </div>
+        <div class="redesocial">
+            <h3>Acompanhe nossa rede socias</h3>
+            <div class="incons">
+                <a href="https://www.facebook.com/iaamuspa/" target="_blank"><img
+                        src="{% static 'website/img/facebook.png' %}" alt="facebook"></a>
+                <a href="https://www.instagram.com/maos_unidas2/" target="_blank"><img
+                        src="{% static 'website/img/instagram.png' %}" alt="instagram"></a>
+            </div>
+        </div>
+        <div class="contato">
+            <h3>Contato</h3>
+            <div>
+                <p><span>✆ </span>(22) 98167-2003</p>
+                <p><span>✉ </span>maounidas@gmail.com</p>
+            </div>
+        </div>
+        <div class="endereco">
+            <h3>Endereço</h3>
+            <p>Rua Francisco Santos, 695, Estacao, São Pedro Da Aldeia - RJ, 28941-212, Brazi</p>
+        </div>
+
+    </footer>
+    <div class="textorodape">
+        <p>2007 - 2024 © Instituto de Amparo ao Autista Mãos Unidas - Todos os direitos reservados. Termos e condições.
+            Políticas de privacidade.</p>
+    </div>
 
 </body>
 

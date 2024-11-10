@@ -328,8 +328,8 @@ html, body {
 /* Contêiner principal que centraliza os cards */
 .caixab1 {
     display: flex;
-    justify-content: center; /* Centraliza os cards verticalmente */
-    align-items: center;     /* Alinha os cards horizontalmente */
+    justify-content: center; 
+    align-items: center;     
     justify-content: space-evenly;
     text-align: center;
     padding: 20px;
@@ -338,14 +338,14 @@ html, body {
 /* Estilo do card */
 .card1 {
     background: #080114;
-    width: 320px;  /* Define a largura do card */
+    width: 320px;  
     display: flex;
-    flex-direction: column;  /* Alinha a imagem e a data em coluna dentro do card */
+    flex-direction: column;  
     justify-content: center;
     align-items: center;
     border-radius: 15px;
     padding: 20px;
-    margin: 10px;  /* Espaçamento entre os cards */
+    margin: 10px;  
 }
 
 /* Estilo da data */
@@ -353,14 +353,77 @@ html, body {
     font-family: var(--fonteMenu);
     color: white;
     font-size: 24px;
-    margin-top: 15px;  /* Espaço entre a imagem e a data */
+    margin-top: 15px; 
 }
 
 /* Estilo da imagem */
 .card1 img {
-    width: 100%;  /* Ajusta a largura da imagem para caber bem no card */
-    height: auto;  /* Mantém a proporção da imagem */
-    border-radius: 15px;  /* Bordas arredondadas nas imagens */
+    width: 100%; 
+    height: auto;  
+    border-radius: 15px;  
     margin-top: 10px;
-    margin-bottom: 15px;  /* Adiciona mais espaço entre a imagem e a data */
+    margin-bottom: 15px; 
+}
+
+/*Roda Pé*/
+.rodape {
+    background: #272727;
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    font-family: var(--fonteTexto);
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#logo2{
+    width: 175px;
+    height: 153px;
+}
+
+.data h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.redesocial h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.icones {
+    margin-bottom: 20px;
+}
+
+.contato h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contato span {
+    font-size: 20px;
+}
+.endereco h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.textorodape {
+    background: #151515;
+    color: white;
+    width: 100%;
+    padding: 10px 0;  
+    text-align: center;
+}
+
+.textorodape  {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;  
 }
