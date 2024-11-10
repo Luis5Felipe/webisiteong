@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,11 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'website/css/voluntariado.css' %}">
 </head>
+
 <body>
+
     <body>
-        <header class="conteiner-a1">
+        <nav class="conteiner-a1">
             <img id="logo" src="{% static 'website/img/logo.png' %}" alt="Logo da Mãos Unidas">
             <div class="menu">
                 <ul>
@@ -25,12 +28,40 @@
                     <li><a href="#" id="btn-apoiar">Doe Agora</a></li>
                 </ul>
             </div>
+        </nav>
+
+        <header class="banner-container">
+            <img id="banner" src="{% static 'website/img/bannervoluntario.jpg' %}" alt="Banner de Voluntário">
+            <div id="msm">
+                <h1>Seja um Voluntário</h1>
+            </div>
         </header>
 
+        <section>
+            <div class="conteiner-n1">
+                <img id="img1" src="{% static 'website/img/fotodofreme15.jpg' %}" alt="Foto com pessoas">
+                <div class="conteiner-n2">
+                    <h2>Junte-se a nós na missão de transformar vidas!</h2>
+                   <p>O voluntariado é uma maneira poderosa de fazer a diferença na comunidade e de contribuir para o bem-estar de pessoas com autismo. Ao se tornar um voluntário, você terá a oportunidade de impactar positivamente a vida de muitos, oferecendo seu tempo, habilidades e amor.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="conteiner-n1">
+                <div class="conteiner-n2">
+                    <p>Na ONG "Mãos Unidas", voluntários atuam em áreas como fonoaudiologia, terapia psicológica, psicomotricidade e estimulação pedagógica, ajudando no desenvolvimento da comunicação, bem-estar emocional e habilidades sociais das pessoas com autismo. Também apoiam na aplicação de técnicas de ABA para promover o desenvolvimento comportamental, contribuindo diretamente para a inclusão e qualidade de vida dos atendidos.!</p>
+                </div>
+                <img id="img1" src="{% static 'website/img/frame14.jpg' %}" alt="Foto com pessoas">
+            </div>
+        </section>
 
+        <section class="caixa">
+            <form>
 
-        
-        <footer class="rodape">
+            </form>
+        </section>
+
+        <!-- <footer class="rodape">
             <img id="logo2" src="{% static 'website/img/logo.png' %}" alt="Logo da Mãos Unidas">
              <div id="data">
                 <h3>🕐 De Seg a Sex das 8h ás 16</h3>
@@ -60,6 +91,7 @@
         <div class="textorodape">
             <p>2007 - 2024 © Instituto de Amparo ao Autista Mãos Unidas - Todos os direitos reservados. Termos e condições.
                 Políticas de privacidade.</p>
-        </div>
-</body>
+        </div> -->
+    </body>
+
 </html>
