@@ -24,7 +24,7 @@
                     <li><a href="#">Nosso Trabalho</a></li>
                     <li><a href="#">Eventos</a></li>
                     <li><a href="#">Agendar Consulta</a></li>
-                    <li><a href="#">Seja um Voluntário</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#" id="btn-apoiar">Doe Agora</a></li>
                 </ul>
             </div>
@@ -42,25 +42,67 @@
                 <img id="img1" src="{% static 'website/img/fotodofreme15.jpg' %}" alt="Foto com pessoas">
                 <div class="conteiner-n2">
                     <h2>Junte-se a nós na missão de transformar vidas!</h2>
-                   <p>O voluntariado é uma maneira poderosa de fazer a diferença na comunidade e de contribuir para o bem-estar de pessoas com autismo. Ao se tornar um voluntário, você terá a oportunidade de impactar positivamente a vida de muitos, oferecendo seu tempo, habilidades e amor.</p>
+                    <p>O voluntariado é uma maneira poderosa de fazer a diferença na comunidade e de contribuir para o
+                        bem-estar de pessoas com autismo. Ao se tornar um voluntário, você terá a oportunidade de
+                        impactar positivamente a vida de muitos, oferecendo seu tempo, habilidades e amor.</p>
                 </div>
             </div>
         </section>
         <section>
             <div class="conteiner-n1">
                 <div class="conteiner-n2">
-                    <p>Na ONG "Mãos Unidas", voluntários atuam em áreas como fonoaudiologia, terapia psicológica, psicomotricidade e estimulação pedagógica, ajudando no desenvolvimento da comunicação, bem-estar emocional e habilidades sociais das pessoas com autismo. Também apoiam na aplicação de técnicas de ABA para promover o desenvolvimento comportamental, contribuindo diretamente para a inclusão e qualidade de vida dos atendidos.!</p>
+                    <p>Na ONG "Mãos Unidas", voluntários atuam em áreas como fonoaudiologia, terapia psicológica,
+                        psicomotricidade e estimulação pedagógica, ajudando no desenvolvimento da comunicação, bem-estar
+                        emocional e habilidades sociais das pessoas com autismo. Também apoiam na aplicação de técnicas
+                        de ABA para promover o desenvolvimento comportamental, contribuindo diretamente para a inclusão
+                        e qualidade de vida dos atendidos.!</p>
                 </div>
                 <img id="img1" src="{% static 'website/img/frame14.jpg' %}" alt="Foto com pessoas">
             </div>
         </section>
-
         <section class="caixa">
-            <form>
-
+            <form action="{% url 'voluntario' %}" method="POST">
+                {% csrf_token %}
+                
+                <h3>Nome Completo</h3>
+                <label for="id_nome_Voluntario">
+                    <input type="text" id="id_nome_Voluntario" name="nome_Voluntario" required placeholder="Ex: Thereza Goldim">
+                </label>
+        
+                <h3>CPF</h3>
+                <label for="id_cpf_Voluntario">
+                    <input type="text" id="id_cpf_Voluntario" name="cpf_Voluntario" required placeholder="Ex: 12345678900" maxlength="11">
+                </label>
+                
+                <h3>Data de Nascimento</h3>
+                <label for="id_data_Nascimento">
+                    <input type="date" id="id_data_Nascimento" name="data_Nascimento" required>
+                </label>
+        
+                <h3>Email</h3>
+                <label for="id_email">
+                    <input type="email" id="id_email" name="email" required placeholder="Ex: email@exemplo.com">
+                </label>
+                
+                <h3>Telefone</h3>
+                <label for="id_telefone">
+                    <input type="tel" id="id_telefone" name="telefone" placeholder="Ex: (21) 94622-8922" required maxlength="15">
+                </label>
+        
+                <h3>Sexo</h3>
+                <label for="id_genero">
+                    <select id="id_genero" name="genero" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="O">Outro</option>
+                    </select>
+                </label>
+        
+                <button type="submit">Enviar</button>
             </form>
         </section>
-
+        
         <!-- <footer class="rodape">
             <img id="logo2" src="{% static 'website/img/logo.png' %}" alt="Logo da Mãos Unidas">
              <div id="data">

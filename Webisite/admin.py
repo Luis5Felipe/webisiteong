@@ -9,7 +9,7 @@ class PacienteAdmin(admin.ModelAdmin):
     search_fields = ('id_Paciente','nome_Paciente')
 
 class VoluntarioAdmin(admin.ModelAdmin):
-    list_display = ('status','nome_Voluntario','cpf_Voluntario','data_Nascimento','telefone','email','endereco','data_Registro','idade_Voluntario','genero')
+    list_display = ('status','nome_Voluntario','cpf_Voluntario','data_Nascimento','telefone','email','endereco','data_Registro','genero')
     search_fields = ('nome_Voluntario','cpf_Voluntario')
 
 class ConsultaAdmin(admin.ModelAdmin):
