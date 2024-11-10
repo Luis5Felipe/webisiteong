@@ -117,3 +117,8 @@ class Consulta(models.Model):
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pendente')
     def __str__(self):
         return f"Consulta de {self.id_Paciente_FK} com {self.id_Voluntario_FK} em {self.data_Registro}"
+    
+
+class MidiaEventos(models.Model):
+    data_evento = models.DateField()
+    fotos = models.ImageField(upload_to='eventos/',blank=True, null=True)

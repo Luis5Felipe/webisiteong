@@ -2,6 +2,7 @@ from django.contrib import admin
 from Webisite.models import Paciente
 from Webisite.models import Voluntario
 from Webisite.models import Consulta
+from Webisite.models import MidiaEventos
 
 class PacienteAdmin(admin.ModelAdmin):
     list_display = ('status','nome_Paciente','nome_Responsavel','email','telefone','cpf_responsavel','data_Nascimento','idade_Paciente','endereco','data_Registro','genero')
@@ -22,8 +23,12 @@ class ConsultaAdmin(admin.ModelAdmin):
             kwargs["queryset"] = Paciente.objects.filter(status='pendente')  # Somente pacientes com status 'ativo'
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
 
+class MediaeventosAdmin(admin.ModelAdmin):
+    list_display = ('data_evento', 'fotos')
+    search_fields = ('search_fields',)
 
 
+admin.site.register(MidiaEventos, MediaeventosAdmin)
 admin.site.register(Paciente, PacienteAdmin)
 admin.site.register(Voluntario, VoluntarioAdmin)
 admin.site.register(Consulta, ConsultaAdmin)
