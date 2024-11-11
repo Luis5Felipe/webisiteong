@@ -53,7 +53,7 @@ class Paciente(models.Model):
 class Voluntario(models.Model):
     id_Voluntario = models.AutoField(primary_key=True)
     nome_Voluntario = models.CharField(max_length=255)
-    cpf_Voluntario = models.CharField(max_length=11)  # Defina como 'max_length=11' para CPF com 11 caracteres
+    cpf_Voluntario = models.CharField(max_length=11) 
     data_Nascimento = models.DateField()
     telefone = models.CharField(max_length=255)
     email = models.EmailField(max_length=255)

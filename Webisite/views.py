@@ -2,25 +2,15 @@ from django.shortcuts import render
 from .models import MidiaEventos
 from .models import Voluntario
 
-# from .forms import VoluntarioForm
-
 def home_view(request):
-    # Recuperar os 3 primeiros eventos, ordenados pela data (caso a data seja relevante para determinar a "mais antiga")
     eventos = MidiaEventos.objects.all().order_by('data_evento')[:3]
 
     if len(eventos) > 0:
-        # Se já houver eventos, pegar o mais antigo
-        evento_antigo = eventos[0]  # Evento mais antigo
-
-        # Verifique se o novo evento foi enviado através do request (como um arquivo)
+        evento_antigo = eventos[0]  
         if request.method == 'POST' and request.FILES.get('nova_imagem'):
             nova_imagem = request.FILES['nova_imagem']
-            
-            # Substituir a imagem do evento mais antigo
             evento_antigo.fotos = nova_imagem
-            evento_antigo.save()  # Salvar a alteração no banco de dados
-
-            # Atualizar a lista de eventos para refletir a alteração
+            evento_antigo.save()  
             eventos = MidiaEventos.objects.all().order_by('data_evento')[:3]
 
     return render(request, '_layouts/home.html', {
@@ -28,6 +18,33 @@ def home_view(request):
         'evento2': eventos[1] if len(eventos) > 1 else None,
         'evento3': eventos[2] if len(eventos) > 2 else None,
     })
+
+
+def voluntario_view(request): 
+    if request.method == 'POST':
+       
+        nome = request.POST.get('nome_Voluntario', None)
+        cpf = request.POST.get('cpf_Voluntario', None)
+        data = request.POST.get('data_Nascimento', None)
+        email = request.POST.get('email', None)
+        telefone = request.POST.get('telefone', None)
+        genero = request.POST.get('genero', None)
+        
+      
+        voluntario = Voluntario(
+            nome_Voluntario=nome,
+            cpf_Voluntario=cpf,
+            data_Nascimento=data,
+            email=email,
+            telefone=telefone,
+            genero=genero
+        )
+        voluntario.save()
+        success_message = "Cadastro realizado com sucesso!"
+        return render(request, '_layouts/volunario.html', {'success_message': success_message})
+    
+    return render(request, '_layouts/volunario.html')
+
 
 
 
@@ -42,40 +59,6 @@ def home_view(request):
         
         
 #     return render(request,'_layouts/volunario.html', )
-
-
-def voluntario_view(request): 
-    if request.method == 'POST':
-        # Coleta os dados do formulário
-        nome = request.POST.get('nome_Voluntario', None)
-        cpf = request.POST.get('cpf_Voluntario', None)
-        data = request.POST.get('data_Nascimento', None)
-        email = request.POST.get('email', None)
-        telefone = request.POST.get('telefone', None)
-        genero = request.POST.get('genero', None)
-        
-        # Cria uma nova instância do modelo Voluntario
-        voluntario = Voluntario(
-            nome_Voluntario=nome,
-            cpf_Voluntario=cpf,
-            data_Nascimento=data,
-            email=email,
-            telefone=telefone,
-            genero=genero
-        )
-
-        # Salva a instância no banco de dados
-        voluntario.save()
-
-        # Você pode adicionar uma mensagem de sucesso ou redirecionar para outra página
-        success_message = "Cadastro realizado com sucesso!"
-        return render(request, '_layouts/volunario.html', {'success_message': success_message})
-    
-    return render(request, '_layouts/volunario.html')
-
-
-
-
 
 #  def clean(self):
 #         # Valida o CPF do voluntário

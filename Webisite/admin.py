@@ -18,9 +18,9 @@ class ConsultaAdmin(admin.ModelAdmin):
 
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         if db_field.name == "id_Voluntario_FK":
-            kwargs["queryset"] = Voluntario.objects.filter(status='aprovado')  # Somente voluntários aprovados
+            kwargs["queryset"] = Voluntario.objects.filter(status='aprovado')  
         elif db_field.name == "id_Paciente_FK":
-            kwargs["queryset"] = Paciente.objects.filter(status='pendente')  # Somente pacientes com status 'ativo'
+            kwargs["queryset"] = Paciente.objects.filter(status='pendente') 
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
 
 class MediaeventosAdmin(admin.ModelAdmin):
