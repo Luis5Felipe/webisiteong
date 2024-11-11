@@ -30,7 +30,8 @@
     <section class="conteiner-r1">
         <img id="banner" src="{% static 'website/img/bannerconsulta.jpg' %}" alt="Logo da Mãos Unidas">
         <div class="conteiner-r2">
-            <form action="{% url 'voluntario' %}" method="POST">
+            <form action="{% url 'consulta' %}" method="POST">
+                {% csrf_token %}
                 <div class="form-row">
                     <div class="input-group">
                         <label for="id_nome_responsavel">Nome completo do Resposável:</label>
@@ -44,8 +45,8 @@
                     </div>
                     <div class="input-group">
                         <label for="id_cpf_responsavel">CPF</label>
-                        <input type="text" id="id_cpf_responsavel" name="cpf_responsavel required
-                        placeholder=" Ex: 12345678900" maxlength="11">
+                        <input type="text" id="id_cpf_responsavel" name="cpf_responsavel" required
+                            placeholder=" Ex: 12345678900" maxlength="11">
                     </div>
                 </div>
                 <div class="form-row">
@@ -81,6 +82,15 @@
                     </div>
                 </div>
                 <button type="submit" class="btn-enviar">Enviar</button>
+                {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </form>
         </div>
     </section>
