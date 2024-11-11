@@ -70,14 +70,17 @@ body {
     cursor: pointer;
     font-size: 18px;
 }
-.conteiner-r1{
+
+.conteiner-r1 {
     display: flex;
 }
-#banner{
+
+#banner {
     width: 900px;
     height: 100%;
 }
-.conteiner-r2{
+
+.conteiner-r2 {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -90,19 +93,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .caixa {
     background-color: #24324a;
     padding: 20px;
     margin: 0 auto;
-    color: #fff;
+
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #fff;
+
 }
 
 .form-row {
@@ -115,13 +119,15 @@ h2 {
 .input-group {
     display: flex;
     flex-direction: column;
-    margin-left: 10px; 
-    margin-right: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .input-group label {
     margin-bottom: 5px;
     font-size: 0.9em;
+    color: white;
+    font-family: var(--fonteMenu);
 }
 
 .input-group input,
@@ -134,7 +140,7 @@ h2 {
 }
 
 
-.row{
+.row {
     display: flex;
 }
 
@@ -147,11 +153,12 @@ h2 {
 .group {
     display: flex;
     flex-direction: column;
-    margin-left: 10px; 
-    margin-right: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .group input,
-.group select{
+.group select {
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -168,8 +175,8 @@ h2 {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    display: block;       
-    margin: 20px auto;     
+    display: block;
+    margin: 20px auto;
 }
 
 .btn-enviar:hover {
@@ -178,7 +185,10 @@ h2 {
 
 /* Container das mensagens */
 .messages {
-    margin-bottom: 20px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-family: var(--fonteMenu);
 }
 
 
@@ -189,19 +199,19 @@ h2 {
     background: #272727;
     color: white;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
     font-family: var(--fonteTexto);
     justify-content: space-between;
     gap: 30px;
 }
 
-#logo2{
+#logo2 {
     width: 175px;
     height: 153px;
 }
 
-#data h3{
+#data h3 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -226,22 +236,24 @@ h2 {
 .contato span {
     font-size: 20px;
 }
-.endereco h3{
+
+.endereco h3 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .textorodape {
     background: #151515;
     color: white;
     width: 100%;
-    padding: 10px 0;  
+    padding: 10px 0;
     text-align: center;
 }
 
-.textorodape  {
+.textorodape {
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    margin: 0;  
+    margin: 0;
 }
