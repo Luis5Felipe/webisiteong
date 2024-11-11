@@ -7,25 +7,26 @@
     border: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: #F8F8F8;
 }
 
-:root{
+:root {
     --fonteMenu: 'Fira sans', sans-serif;
     --fonteTexto: 'Fira sans Condensed', sans-serif;
-} 
+}
 
 /* Menu */
 .conteiner-a1 {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     background-color: #ffffff;
-    padding: 10px 30px; 
+    padding: 10px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -61,19 +62,20 @@ html, body {
 /*Banner inicio*/
 
 .banner-container {
-    position: relative; 
-    width: 100%; 
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 
 #msm {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    font-size: 3rem; 
+    font-size: 2rem;
     font-family: var(--fonteMenu);
     font-weight: bold;
 }
@@ -92,18 +94,19 @@ html, body {
 
 /*apelo do voluntario*/
 
-.conteiner-n1{
+.conteiner-n1 {
     margin: 80px 0px 80px 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#img1{
+#img1 {
     width: 476px;
     border-radius: 20px;
 }
-.conteiner-n2{
+
+.conteiner-n2 {
     background: #F7981E;
     border-radius: 25px;
     width: 750px;
@@ -116,14 +119,14 @@ html, body {
     position: relative;
 }
 
-.conteiner-n2 p{
+.conteiner-n2 p {
     font-family: var(--fonteTexto);
     font-size: 25px;
     color: white;
     padding-left: 25px;
 }
 
-.conteiner-n2 h2{
+.conteiner-n2 h2 {
     font-family: var(--fonteMenu);
     font-size: 32px;
     color: white;
@@ -132,33 +135,113 @@ html, body {
 }
 
 
-.caixa{
-    width: 1728px;
-    height: 319px;
-    background: #293557;
+
+
+/*Formulario*/
+#caixa2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.caixa {
+    background-color: #24324a;
+    padding: 20px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+    margin-right: 10px; 
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.input-group input,
+.input-group select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 350px;
+}
+
+
+.group label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+    margin-right: 10px; 
+}
+.group input,
+.group select{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 157px;
+}
+
+.btn-enviar {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff8c00;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #e67e00;
+}
 
 
 /*Roda Pé*/
 .rodape {
+    margin-top: 120px;
     background: #272727;
     color: white;
     padding-top: 20px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
     font-family: var(--fonteTexto);
     justify-content: space-between;
     gap: 30px;
 }
 
-#logo2{
+#logo2 {
     width: 175px;
     height: 153px;
 }
 
-.data h3{
+.data h3 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -183,22 +266,24 @@ html, body {
 .contato span {
     font-size: 20px;
 }
-.endereco h3{
+
+.endereco h3 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .textorodape {
     background: #151515;
     color: white;
     width: 100%;
-    padding: 10px 0;  
+    padding: 10px 0;
     text-align: center;
 }
 
-.textorodape  {
+.textorodape {
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    margin: 0;  
+    margin: 0;
 }

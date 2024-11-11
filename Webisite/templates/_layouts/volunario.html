@@ -60,52 +60,59 @@
                 <img id="img1" src="{% static 'website/img/frame14.jpg' %}" alt="Foto com pessoas">
             </div>
         </section>
+
         <section class="caixa">
-            <form action="{% url 'voluntario' %}" method="POST">
+            <h2>Faça sua inscrição aqui.</h2>
+            <form action="{% url 'voluntario' %}" method="POST" id="caixa2">
                 {% csrf_token %}
-                
-                <h3>Nome Completo</h3>
-                <label for="id_nome_Voluntario">
-                    <input type="text" id="id_nome_Voluntario" name="nome_Voluntario" required placeholder="Ex: Thereza Goldim">
-                </label>
-        
-                <h3>CPF</h3>
-                <label for="id_cpf_Voluntario">
-                    <input type="text" id="id_cpf_Voluntario" name="cpf_Voluntario" required placeholder="Ex: 12345678900" maxlength="11">
-                </label>
-                
-                <h3>Data de Nascimento</h3>
-                <label for="id_data_Nascimento">
-                    <input type="date" id="id_data_Nascimento" name="data_Nascimento" required>
-                </label>
-        
-                <h3>Email</h3>
-                <label for="id_email">
-                    <input type="email" id="id_email" name="email" required placeholder="Ex: email@exemplo.com">
-                </label>
-                
-                <h3>Telefone</h3>
-                <label for="id_telefone">
-                    <input type="tel" id="id_telefone" name="telefone" placeholder="Ex: (21) 94622-8922" required maxlength="15">
-                </label>
-        
-                <h3>Sexo</h3>
-                <label for="id_genero">
-                    <select id="id_genero" name="genero" required>
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="M">Masculino</option>
-                        <option value="F">Feminino</option>
-                        <option value="O">Outro</option>
-                    </select>
-                </label>
-        
-                <button type="submit">Enviar</button>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="id_nome_Voluntario">Nome completo:</label>
+                        <input type="text" id="id_nome_Voluntario" name="nome_Voluntario" required
+                            placeholder="Ex: Thereza Goldim">
+                    </div>
+                    <div class="input-group">
+                        <label for="id_email">Email:</label>
+                        <input type="email" id="id_email" name="email" required placeholder="Ex: email@exemplo.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="id_telefone">Telefone:</label>
+                        <input type="tel" id="id_telefone" name="telefone" placeholder="Ex: (21) 94622-8922" required maxlength="15">
+                    </div>
+                    <div class="group">
+                        <label for="id_genero">Gênero:</label>
+                        <select id="id_genero" name="genero" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                            <option value="O">Outro</option>
+                        </select>
+                    </div>
+                    <div class="group">
+                        <label for="id_data_Nascimento">Data de Nascimento:</label>
+                        <input type="date" id="id_data_Nascimento" name="data_Nascimento" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="id_endereco">Endereço:</label>
+                        <input type="text" id="id_endereco" name="endereco" placeholder="Ex: Rua A, Niterói, RJ">
+                    </div>
+                    <div class="input-group">
+                        <label for="id_cpf_Voluntario">CPF</label>
+                        <input type="text" id="id_cpf_Voluntario" name="cpf_Voluntario" required
+                            placeholder="Ex: 12345678900" maxlength="11">
+                    </div>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
         </section>
         
-        <!-- <footer class="rodape">
+        <footer class="rodape">
             <img id="logo2" src="{% static 'website/img/logo.png' %}" alt="Logo da Mãos Unidas">
-             <div id="data">
+            <div id="data">
                 <h3>🕐 De Seg a Sex das 8h ás 16</h3>
             </div>
             <div class="redesocial">
@@ -128,12 +135,13 @@
                 <h3>Endereço</h3>
                 <p>Rua Francisco Santos, 695, Estacao, São Pedro Da Aldeia - RJ, 28941-212, Brazi</p>
             </div>
-    
+
         </footer>
         <div class="textorodape">
-            <p>2007 - 2024 © Instituto de Amparo ao Autista Mãos Unidas - Todos os direitos reservados. Termos e condições.
+            <p>2007 - 2024 © Instituto de Amparo ao Autista Mãos Unidas - Todos os direitos reservados. Termos e
+                condições.
                 Políticas de privacidade.</p>
-        </div> -->
+        </div>
     </body>
 
 </html>
