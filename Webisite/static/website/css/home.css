@@ -383,7 +383,7 @@ html, body {
     height: 153px;
 }
 
-.data h3{
+#data h3{
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
