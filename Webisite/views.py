@@ -125,6 +125,9 @@ def consulta_view(request):
     return render(request, '_layouts/consulta.html')
 
 
+def doacao_viw(request):
+     return render(request, '_layouts/doacao.html')
+
 
 
 

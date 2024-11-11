@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mãos Unidas - Organização de apoio e serviços sociais">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Fira+Sans+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Doe</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/doacao.css' %}">
+    <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-ligar empresa matriz-external-outline-wichaiwi-16.png">
+
+</head>
+<body>
+    <header class="conteiner-a1">
+        <img id="logo" src="{% static 'website/img/logo.png' %}" alt="Logo da Mãos Unidas">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Nosso Trabalho</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Agendar Consulta</a></li>
+                <li><a href="volunario.html">Seja um Voluntário</a></li>
+                <li><a href="#" id="btn-apoiar">Doe Agora</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="container-r1">
+        <div class="banner-content">
+            <img class="banner-image" src="{% static 'website/img/bannerconsulta3.jpg' %}" alt="Logo da Mãos Unidas">
+            <div class="conteiner-r2">
+                <p>Seu apoio faz a diferença: cada doação é um passo em direção a um mundo onde todos têm a oportunidade de brilhar!</p>
+            </div>
+        </div>
+        <div class="conteiner-r3">
+            <img class="qr-code" src="{% static 'website/img/pix.png' %}" alt="QR Code Pix">
+            <div class="ted">
+                <h1>Ted / Doc</h1>
+                <p>Banco Itaú</p>
+                <p>Ag 6101</p>
+                <p>C/C 45142-2</p>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <img id="logo2" src="{% static 'website/img/logo.png' %}" alt="Logo da Mãos Unidas">
+         <div id="data">
+            <h3>🕐 De Seg a Sex das 8h ás 16</h3>
+        </div>
+        <div class="redesocial">
+            <h3>Acompanhe nossa rede socias</h3>
+            <div class="incons">
+                <a href="https://www.facebook.com/iaamuspa/" target="_blank"><img
+                        src="{% static 'website/img/facebook.png' %}" alt="facebook"></a>
+                <a href="https://www.instagram.com/maos_unidas2/" target="_blank"><img
+                        src="{% static 'website/img/instagram.png' %}" alt="instagram"></a>
+            </div>
+        </div>
+        <div class="contato">
+            <h3>Contato</h3>
+            <div>
+                <p><span>✆ </span>(22) 98167-2003</p>
+                <p><span>✉ </span>maounidas@gmail.com</p>
+            </div>
+        </div>
+        <div class="endereco">
+            <h3>Endereço</h3>
+            <p>Rua Francisco Santos, 695, Estacao, São Pedro Da Aldeia - RJ, 28941-212, Brazi</p>
+        </div>
+
+    </footer>
+    <div class="textorodape">
+        <p>2007 - 2024 © Instituto de Amparo ao Autista Mãos Unidas - Todos os direitos reservados. Termos e condições.
+            Políticas de privacidade.</p>
+    </div>
+</body>
+</html>
