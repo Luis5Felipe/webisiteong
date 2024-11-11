@@ -45,10 +45,7 @@ def voluntario_view(request):
     
     return render(request, '_layouts/volunario.html')
 
-
-
-
-# def voluntario_view(request): 
+def consulta_view(request): 
 #     if request.method == 'POST':
 #         nome = request.POST.get('nome_Voluntario',None)
 #         cpf = request.POST.get('cpf_Voluntario', None)
@@ -56,9 +53,17 @@ def voluntario_view(request):
 #         email = request.POST.get('email', None)
 #         telefone = request.POST.get('telefone', None)
 #         genero = request.POST.get('genero', None)
-        
-        
-#     return render(request,'_layouts/volunario.html', )
+     return render(request,'_layouts/consulta.html', )
+
+
+
+
+
+
+
+
+
+
 
 #  def clean(self):
 #         # Valida o CPF do voluntário

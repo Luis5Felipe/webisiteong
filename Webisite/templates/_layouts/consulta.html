@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mãos Unidas - Organização de apoio e serviços sociais">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Fira+Sans+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Voluntariado</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/Consulta.css' %}">
+</head>
+
+<body>
+    <nav class="conteiner-a1">
+        <img id="logo" src="{% static 'website/img/logo.png' %}" alt="Logo da Mãos Unidas">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Nosso Trabalho</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Seja um Voluntário</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" id="btn-apoiar">Doe Agora</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="conteiner-r1">
+        <img id="banner" src="{% static 'website/img/bannerconsulta.jpg' %}" alt="Logo da Mãos Unidas">
+        <div class="conteiner-r2">
+            <form action="{% url 'voluntario' %}" method="POST">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="id_nome_responsavel">Nome completo do Resposável:</label>
+                        <input type="text" id="id_nome_responsavel" name="nome_responsavel" required
+                            placeholder="Ex: Thereza Goldim">
+                    </div>
+                    <div class="input-group">
+                        <label for="id_nome_paciente">Nome completo da criança :</label>
+                        <input type="text" id="id_nome_paciente" name="nome_paciente" required
+                            placeholder="Ex: Thereza Goldim">
+                    </div>
+                    <div class="input-group">
+                        <label for="id_cpf_responsavel">CPF</label>
+                        <input type="text" id="id_cpf_responsavel" name="cpf_responsavel required
+                        placeholder=" Ex: 12345678900" maxlength="11">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="id_email">Email:</label>
+                        <input type="email" id="id_email" name="email" required placeholder="Ex: email@exemplo.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="id_telefone">Telefone:</label>
+                        <input type="tel" id="id_telefone" name="telefone" placeholder="Ex: (21) 94622-8922" required
+                            maxlength="15">
+                    </div>
+                    <div class="input-group">
+                        <label for="id_endereco">Endereço:</label>
+                        <input type="text" id="id_endereco" name="endereco" placeholder="Ex: Rua A, Niterói, RJ">
+                    </div>
+                    <div class="row">
+                        <div class="group">
+                            <label for="id_genero">Gênero:</label>
+                            <select id="id_genero" name="genero" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Feminino</option>
+                                <option value="O">Outro</option>
+                            </select>
+                        </div>
+                        <div class="group">
+                            <label for="id_data_Nascimento">Data de Nascimento:</label>
+                            <input type="date" id="id_data_Nascimento" name="data_Nascimento" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer class="rodape">
+        <img id="logo2" src="{% static 'website/img/logo.png' %}" alt="Logo da Mãos Unidas">
+        <div id="data">
+            <h3>🕐 De Seg a Sex das 8h ás 16</h3>
+        </div>
+        <div class="redesocial">
+            <h3>Acompanhe nossa rede socias</h3>
+            <div class="incons">
+                <a href="https://www.facebook.com/iaamuspa/" target="_blank"><img
+                        src="{% static 'website/img/facebook.png' %}" alt="facebook"></a>
+                <a href="https://www.instagram.com/maos_unidas2/" target="_blank"><img
+                        src="{% static 'website/img/instagram.png' %}" alt="instagram"></a>
+            </div>
+        </div>
+        <div class="contato">
+            <h3>Contato</h3>
+            <div>
+                <p><span>✆ </span>(22) 98167-2003</p>
+                <p><span>✉ </span>maounidas@gmail.com</p>
+            </div>
+        </div>
+        <div class="endereco">
+            <h3>Endereço</h3>
+            <p>Rua Francisco Santos, 695, Estacao, São Pedro Da Aldeia - RJ, 28941-212, Brazi</p>
+        </div>
+
+    </footer>
+    <div class="textorodape">
+        <p>2007 - 2024 © Instituto de Amparo ao Autista Mãos Unidas - Todos os direitos reservados. Termos e
+            condições.
+            Políticas de privacidade.</p>
+    </div>
+</body>
+
+</html>
