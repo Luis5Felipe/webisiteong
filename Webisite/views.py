@@ -24,30 +24,51 @@ def home_view(request):
         'evento3': eventos[2] if len(eventos) > 2 else None,
     })
 
-
-def voluntario_view(request): 
+def voluntario_view(request):
     if request.method == 'POST':
-       
+        # Coletando os dados do formulário
         nome = request.POST.get('nome_Voluntario', None)
         cpf = request.POST.get('cpf_Voluntario', None)
         data = request.POST.get('data_Nascimento', None)
         email = request.POST.get('email', None)
         telefone = request.POST.get('telefone', None)
         genero = request.POST.get('genero', None)
-        
-      
-        voluntario = Voluntario(
-            nome_Voluntario=nome,
-            cpf_Voluntario=cpf,
-            data_Nascimento=data,
-            email=email,
-            telefone=telefone,
-            genero=genero
-        )
-        voluntario.save()
-        success_message = "Cadastro realizado com sucesso!"
-        return render(request, '_layouts/volunario.html', {'success_message': success_message})
-    
+
+        try:
+            # Verificando se a data de nascimento foi informada e convertendo
+            data_nascimento = datetime.strptime(data, '%Y-%m-%d').date() if data else None
+
+            # Validando o CPF
+            cpf_validator = CPF()
+            if not cpf_validator.validate(cpf):
+                raise ValidationError("CPF do voluntário inválido.")
+
+            # Verificando a idade (opcional, se necessário calcular)
+            if data_nascimento:
+                today = datetime.today().date()
+                idade_calculada = today.year - data_nascimento.year - ((today.month, today.day) < (data_nascimento.month, data_nascimento.day))
+                
+                if idade_calculada < 18:
+                    raise ValidationError("O voluntário deve ser maior de idade para se cadastrar.")
+            
+            # Criando a instância do modelo Voluntário
+            voluntario = Voluntario(
+                nome_Voluntario=nome,
+                cpf_Voluntario=cpf,
+                data_Nascimento=data_nascimento,
+                email=email,
+                telefone=telefone,
+                genero=genero
+            )
+            voluntario.save()
+
+            # Mensagem de sucesso
+            messages.success(request, "Cadastro realizado com sucesso!")
+
+        except ValidationError as e:
+            # Mensagem de erro, caso algum dado não passe na validação
+            messages.error(request, str(e))  # Exibindo a exceção de erro como mensagem
+
     return render(request, '_layouts/volunario.html')
 
 
