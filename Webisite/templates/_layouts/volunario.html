@@ -20,12 +20,12 @@
         <img id="logo" src="{% static 'website/img/logo.png' %}" alt="Logo da Mãos Unidas">
         <div class="menu">
             <ul>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Nosso Trabalho</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Agendar Consulta</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#" id="btn-apoiar">Doe Agora</a></li>
+                <li><a href="{% url 'home' %}#sobre">Sobre Nós</a></li>
+                <li><a href="{% url 'home' %}#margin">Nosso Trabalho</a></li>
+                <li><a href="{% url 'home' %}#eventos">Eventos</a></li>
+                <li><a href="{% url 'consulta' %}">Agendar Consulta</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'doacao' %}" id="btn-apoiar">Doe Agora</a></li>
             </ul>
         </div>
     </nav>

@@ -8,7 +8,7 @@ from Webisite.views import home_view, voluntario_view,consulta_view,doacao_viw
 
 urlpatterns = [
     path('admin/', admin.site.urls),      
-    path('', home_view),                   
+    path('', home_view, name= 'home'),                   
     path('voluntario/', voluntario_view, name='voluntario'),
     path('consulta/', consulta_view, name='consulta'),
     path('doacao/', doacao_viw, name='doacao')
