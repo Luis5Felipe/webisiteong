@@ -8,14 +8,16 @@ A Mãos Unidas é uma organização que realiza tratamentos e oferece suporte pa
 
 ## Funcionalidades do Projeto :computer:
 
-----
+    - Agentamento de Consulta
+    - Cadastro de Voluntário
+    - Lista de Eventos atualizada
 
 ## Tecnologias Utilizadas :hammer_and_wrench:
 
     - Frontend: HTML5, CSS3, JavaScript
     - Backend: Django (Python)
-    - Banco de Dados: ----
-    - Deploy: Vercel
+    - Banco de Dados: MySql
+    - Deploy: PythonAnywhere
 
 
 ## Como Rodar o Projeto :rocket:
@@ -29,7 +31,9 @@ A Mãos Unidas é uma organização que realiza tratamentos e oferece suporte pa
 ### Bliblotecas utilizadas
 
     - validate-docbr
-
+    - pillow
+    - psycopg2
+    
 ## Tutorial 
 
 #### Crie um ambiente virtual:
@@ -48,7 +52,7 @@ A Mãos Unidas é uma organização que realiza tratamentos e oferece suporte pa
 
 #### Clone este repositório:
 
-    git@github.com:Luis5Felipe/webisiteong.git
+    git clone git@github.com:Luis5Felipe/webisiteong.git
 
 #### Instale as dependências:
 
@@ -65,6 +69,6 @@ A Mãos Unidas é uma organização que realiza tratamentos e oferece suporte pa
 
 ## Contato :mailbox_with_mail:
 
-    Desenvolvido [por Luis Felip](https://www.linkedin.com/in/luis-felipe-dos-santos/) como parte do projeto de extensão da Unilasalle.
+Desenvolvido por [Luis Felipe](https://www.linkedin.com/in/luis-felipe-dos-santos/) e [Keven Pinto](https://www.linkedin.com/in/keven-pinto-fernandes-912ab521a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) como parte do projeto de extensão da Unilasalle.
 
 # Licença :page_facing_up:
